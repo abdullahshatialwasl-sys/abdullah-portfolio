@@ -24,10 +24,6 @@ export default function Hero() {
       <div className="max-w-2xl">
 
 
-        <p className="text-blue-400 text-lg mb-3">
-          {t.hello}
-        </p>
-
 
         <h1 className="text-5xl lg:text-7xl font-bold mb-4">
           {t.name}
