@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useLanguage } from "./LanguageProvider";
 import { translations } from "@/data/translations";
 
 export default function Hero() {
 
-  const [language, setLanguage] = useState<"en" | "ar">("en");
+  const { language } = useLanguage();
 
   const t = translations[language];
 
@@ -21,8 +21,9 @@ export default function Hero() {
     >
 
 
-      <div className="max-w-2xl">
+      {/* Text */}
 
+      <div className="max-w-2xl">
 
 
         <h1 className="text-5xl lg:text-7xl font-bold mb-4">
@@ -42,8 +43,8 @@ export default function Hero() {
         <p className="text-slate-400 leading-8 mb-8">
 
           {language === "en"
-            ? "Passionate about Procurement, Clinical Pharmacy, Inventory Management and Healthcare Operations."
-            : "مهتم بالمشتريات والصيدلة السريرية وإدارة المخزون والعمليات الصحية."
+            ? "Clinical Pharmacist and Procurement Specialist with experience in purchasing, supplier management, inventory analysis, and healthcare operations."
+            : "صيدلي سريري وأخصائي مشتريات لدي خبرة في المشتريات وإدارة الموردين وتحليل المخزون والعمليات الصحية."
           }
 
         </p>
@@ -56,7 +57,7 @@ export default function Hero() {
           <a
             href="/cv/Abdullah-Jaber-CV.pdf"
             download
-            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white"
+            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold"
           >
             {t.download}
           </a>
@@ -65,7 +66,7 @@ export default function Hero() {
 
           <a
             href="#contact"
-            className="border border-slate-600 hover:bg-slate-800 px-6 py-3 rounded-xl"
+            className="border border-slate-600 hover:bg-slate-800 px-6 py-3 rounded-xl font-semibold"
           >
             {t.contactMe}
           </a>
@@ -78,6 +79,8 @@ export default function Hero() {
 
 
 
+      {/* Image */}
+
       <div>
 
         <Image
@@ -86,7 +89,7 @@ export default function Hero() {
           width={420}
           height={420}
           priority
-          className="rounded-full border-4 border-blue-500"
+          className="rounded-full border-4 border-blue-500 shadow-2xl object-cover"
         />
 
       </div>
