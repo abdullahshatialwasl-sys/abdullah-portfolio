@@ -7,7 +7,7 @@ import { translations } from "@/data/translations";
 export default function Hero() {
   const { language } = useLanguage();
 
-  const t = translations[language];
+  const t = translations[language as keyof typeof translations];
 
   return (
     <section
