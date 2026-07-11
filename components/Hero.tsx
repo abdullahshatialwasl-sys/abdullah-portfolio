@@ -55,7 +55,7 @@ export default function Hero() {
 
 
           <a
-            href="/cv/Abdullah-Jaber-CV.pdf"
+            href="/cv/My New CV.pdf"
             download
             className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold"
           >
