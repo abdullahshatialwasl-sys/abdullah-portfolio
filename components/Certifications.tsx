@@ -1,6 +1,13 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Certifications() {
+  const [selectedCertificate, setSelectedCertificate] = useState<string | null>(
+    null
+  );
+
   const certificates = [
     "certificate01.jpeg",
     "certificate02.jpeg",
@@ -46,21 +53,46 @@ export default function Certifications() {
             key={index}
             className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition"
           >
-            <a
-              href={`/certificates/${certificate}`}
-              target="_blank"
+            <button
+              onClick={() =>
+                setSelectedCertificate(`/certificates/${certificate}`)
+              }
+              className="w-full"
             >
               <Image
                 src={`/certificates/${certificate}`}
                 alt={`Certificate ${index + 1}`}
                 width={500}
                 height={350}
-                className="w-full h-48 object-cover hover:scale-105 transition duration-300"
+                className="w-full h-48 object-cover hover:scale-105 transition duration-300 cursor-pointer"
               />
-            </a>
+            </button>
           </div>
         ))}
       </div>
+
+      {selectedCertificate && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
+          <div className="relative max-w-5xl w-full">
+            
+            <button
+              onClick={() => setSelectedCertificate(null)}
+              className="absolute right-3 top-3 z-10 bg-white text-black rounded-full w-10 h-10 text-xl font-bold hover:bg-gray-200"
+            >
+              ✕
+            </button>
+
+            <Image
+              src={selectedCertificate}
+              alt="Certificate Preview"
+              width={1200}
+              height={900}
+              className="w-full max-h-[90vh] object-contain rounded-xl"
+            />
+
+          </div>
+        </div>
+      )}
     </section>
   );
 }
