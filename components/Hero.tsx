@@ -35,7 +35,7 @@ export default function Hero() {
 
         <div className="flex gap-4">
           <a
-            href="/cv/My-New-CV.pdf"
+            href="/cv/Abdullah-Jaber-CV.pdf"
             download
             className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-white font-semibold"
           >
