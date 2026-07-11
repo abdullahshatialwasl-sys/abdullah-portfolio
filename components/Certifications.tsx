@@ -17,6 +17,8 @@ export default function Certifications() {
     "certificate13.jpeg",
     "certificate14.jpeg",
     "certificate15.jpeg",
+    "certificate16.jpeg",
+    "certificate17.jpeg",
   ];
 
   return (
