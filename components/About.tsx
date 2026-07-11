@@ -20,15 +20,14 @@ export default function About() {
 
           <p className="text-slate-400 text-lg leading-8 mb-6">
             I am a Clinical Pharmacist and Procurement Specialist with
-            experience in healthcare, purchasing, supplier management,
-            inventory control, and procurement operations.
+            experience in pharmacy operations, healthcare, purchasing,
+            supplier management, inventory control, and procurement activities.
           </p>
 
           <p className="text-slate-400 text-lg leading-8">
-            I enjoy improving procurement processes, analyzing inventory,
-            building strong supplier relationships, and supporting business
-            growth through effective purchasing strategies and operational
-            efficiency.
+            I focus on improving procurement processes, analyzing inventory,
+            managing supplier relationships, and supporting business growth
+            through efficient purchasing strategies and operational excellence.
           </p>
         </div>
 
@@ -38,7 +37,14 @@ export default function About() {
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500 transition">
             <h3 className="text-4xl font-bold text-blue-400">4+</h3>
             <p className="text-slate-400 mt-2">
-              Years of Experience
+              Years Experience in Pharmacies
+            </p>
+          </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500 transition">
+            <h3 className="text-4xl font-bold text-blue-400">2+</h3>
+            <p className="text-slate-400 mt-2">
+              Years Experience in Procurement
             </p>
           </div>
 
@@ -46,13 +52,6 @@ export default function About() {
             <h3 className="text-4xl font-bold text-blue-400">15+</h3>
             <p className="text-slate-400 mt-2">
               Branches Supported
-            </p>
-          </div>
-
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-blue-500 transition">
-            <h3 className="text-4xl font-bold text-blue-400">1000+</h3>
-            <p className="text-slate-400 mt-2">
-              Purchase Orders Processed
             </p>
           </div>
 
