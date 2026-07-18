@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useLanguage } from "./LanguageProvider";
 
 export default function Certifications() {
+  const { language } = useLanguage();
+
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(
     null
   );
@@ -31,19 +34,26 @@ export default function Certifications() {
   return (
     <section
       id="certificates"
-      className="max-w-7xl mx-auto px-8 py-24"
+      dir={language === "ar" ? "rtl" : "ltr"}
+      className={`max-w-7xl mx-auto px-8 py-24 ${
+        language === "ar" ? "text-right" : "text-left"
+      }`}
     >
       <div className="text-center mb-12">
         <p className="text-blue-400 font-semibold uppercase tracking-widest">
-          Certifications
+          {language === "en" ? "Certifications" : "الشهادات"}
         </p>
 
         <h2 className="text-4xl font-bold mt-2">
-          Professional Certifications
+          {language === "en"
+            ? "Professional Certifications"
+            : "الشهادات المهنية"}
         </h2>
 
         <p className="text-slate-400 mt-4">
-          Training courses and professional certificates.
+          {language === "en"
+            ? "Training courses and professional certificates."
+            : "الدورات التدريبية والشهادات المهنية."}
         </p>
       </div>
 
@@ -74,7 +84,6 @@ export default function Certifications() {
       {selectedCertificate && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
           <div className="relative max-w-5xl w-full">
-            
             <button
               onClick={() => setSelectedCertificate(null)}
               className="absolute right-3 top-3 z-10 bg-white text-black rounded-full w-10 h-10 text-xl font-bold hover:bg-gray-200"
@@ -89,7 +98,6 @@ export default function Certifications() {
               height={900}
               className="w-full max-h-[90vh] object-contain rounded-xl"
             />
-
           </div>
         </div>
       )}
