@@ -21,8 +21,10 @@ export default function Experience() {
             "خبرة عملية في تشغيل الصيدليات، وإدارة المشتريات، والتنسيق مع الموردين، وتحسين إجراءات العمل وتحليل المخزون.",
         };
 
-  const experiences = profile.experience[language];
-
+  const experiences =
+  language === "en"
+    ? profile.experience.en
+    : profile.experience.ar;
   return (
     <section
       id="experience"
