@@ -29,8 +29,8 @@ export default function Hero() {
 
         <p className="text-slate-400 leading-8 mb-8">
           {language === "en"
-            ? "Clinical Pharmacist and Procurement Specialist with experience in purchasing, supplier management, inventory analysis, and healthcare operations."
-            : "صيدلي سريري وأخصائي مشتريات لدي خبرة في المشتريات وإدارة الموردين وتحليل المخزون والعمليات الصحية."}
+            ? "Clinical Pharmacist with over four years of pharmacy experience and two years of procurement experience in the healthcare sector. Skilled in pharmaceutical care, medication dispensing, patient counseling, medication safety, supplier management, inventory optimization, and healthcare operations."
+            : "صيدلي سريري بخبرة تزيد عن أربع سنوات في الصيدليات، وسنتين في مجال المشتريات الصحية. أمتلك خبرة في الرعاية الدوائية، وصرف الأدوية، والاستشارات الدوائية، وتعزيز سلامة الدواء، إلى جانب إدارة الموردين، وتحليل المخزون، وتحسين العمليات التشغيلية في قطاع الرعاية الصحية."}
         </p>
 
         <div className="flex gap-4">

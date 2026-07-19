@@ -9,23 +9,29 @@ export default function About() {
     language === "en"
       ? {
           tag: "About Me",
-          title: "Clinical Pharmacist & Procurement Specialist",
-          p1: "I am a Clinical Pharmacist and Procurement Specialist with experience in pharmacy operations, healthcare, purchasing, supplier management, inventory control, and procurement activities.",
-          p2: "I focus on improving procurement processes, analyzing inventory, managing supplier relationships, and supporting business growth through efficient purchasing strategies and operational excellence.",
+          title: "Clinical Pharmacist",
+
+          p1: "I am a Clinical Pharmacist with a Bachelor's degree in Clinical Pharmacy and over four years of professional experience in community pharmacy practice. My expertise includes medication dispensing, prescription review, pharmaceutical care, patient counseling, and promoting the safe and effective use of medicines according to evidence-based practice.",
+
+          p2: "In addition to my clinical pharmacy background, I have gained experience in healthcare procurement, supplier coordination, inventory analysis, and supply chain operations. This combination allows me to integrate clinical knowledge with operational excellence, supporting both patient care and healthcare business performance.",
+
           exp1: "Years Experience in Pharmacies",
           exp2: "Years Experience in Procurement",
           exp3: "Branches Supported",
-          exp4: "Commitment & Professionalism",
+          exp4: "Patient Safety Focus",
         }
       : {
           tag: "نبذة عني",
-          title: "صيدلي سريري وأخصائي مشتريات",
-          p1: "أنا صيدلي سريري وأخصائي مشتريات، أمتلك خبرة في الصيدليات وإدارة المشتريات والتعامل مع الموردين وتحليل المخزون وتحسين العمليات التشغيلية.",
-          p2: "أركز على تطوير عمليات الشراء، وتحليل المخزون، وبناء علاقات فعالة مع الموردين، ودعم نمو الأعمال من خلال استراتيجيات شراء احترافية.",
+          title: "صيدلي سريري",
+
+          p1: "أنا صيدلي حاصل على درجة البكالوريوس في الصيدلة السريرية، وأمتلك أكثر من أربع سنوات من الخبرة العملية في الصيدليات، شملت صرف الأدوية، مراجعة الوصفات الطبية، تقديم الاستشارات الدوائية، وتثقيف المرضى لضمان الاستخدام الآمن والفعال للأدوية وفق أفضل الممارسات المهنية.",
+
+          p2: "إلى جانب خبرتي الصيدلانية، اكتسبت خبرة في مجال المشتريات الصحية شملت إدارة الموردين، تحليل المخزون، متابعة عمليات التوريد، ودعم سلسلة الإمداد. وقد ساهم ذلك في تطوير فهم متكامل للجوانب السريرية والإدارية داخل قطاع الرعاية الصحية.",
+
           exp1: "سنوات خبرة في الصيدليات",
           exp2: "سنوات خبرة في المشتريات",
           exp3: "فرعاً يتم دعمه",
-          exp4: "التزام واحترافية",
+          exp4: "التركيز على سلامة المرضى",
         };
 
   return (

@@ -1,9 +1,9 @@
 "use client";
 
 import {
-  FaShoppingCart,
-  FaFileExcel,
   FaHospital,
+  FaFileExcel,
+  FaShoppingCart,
   FaChartLine,
 } from "react-icons/fa";
 
@@ -17,13 +17,15 @@ export default function Skills() {
     language === "en"
       ? [
           {
-            icon: <FaShoppingCart size={35} />,
-            title: "Procurement",
+            icon: <FaHospital size={35} />,
+            title: "Clinical Pharmacy",
             skills: [
-              "Supplier Management",
-              "Negotiation",
-              "Purchase Orders",
-              "Inventory Control",
+              "Clinical Pharmacy",
+              "Pharmaceutical Care",
+              "Patient Counseling",
+              "Medication Safety",
+              "Prescription Review",
+              "Drug Information",
             ],
           },
           {
@@ -33,33 +35,45 @@ export default function Skills() {
               "Microsoft Excel",
               "Odoo ERP",
               "Microsoft Office",
+              "Data Analysis",
               "Reports Preparation",
             ],
           },
           {
-            icon: <FaHospital size={35} />,
-            title: "Healthcare",
+            icon: <FaShoppingCart size={35} />,
+            title: "Healthcare Procurement",
             skills: [
-              "Clinical Pharmacy",
-              "Medication Counseling",
-              "Nutrition",
+              "Supplier Management",
+              "Negotiation",
+              "Purchase Orders",
+              "Inventory Control",
+              "Supply Chain Coordination",
             ],
           },
           {
             icon: <FaChartLine size={35} />,
             title: "Professional Skills",
-            skills: profile.skills.en,
+            skills: [
+              "Communication",
+              "Problem Solving",
+              "Teamwork",
+              "Leadership",
+              "Time Management",
+              "Continuous Learning",
+            ],
           },
         ]
       : [
           {
-            icon: <FaShoppingCart size={35} />,
-            title: "المشتريات",
+            icon: <FaHospital size={35} />,
+            title: "الصيدلة السريرية",
             skills: [
-              "إدارة الموردين",
-              "التفاوض",
-              "أوامر الشراء",
-              "إدارة المخزون",
+              "الصيدلة السريرية",
+              "الرعاية الدوائية",
+              "تثقيف المرضى",
+              "سلامة الدواء",
+              "مراجعة الوصفات الطبية",
+              "المعلومات الدوائية",
             ],
           },
           {
@@ -69,22 +83,32 @@ export default function Skills() {
               "مايكروسوفت إكسل",
               "Odoo ERP",
               "مايكروسوفت أوفيس",
+              "تحليل البيانات",
               "إعداد التقارير",
             ],
           },
           {
-            icon: <FaHospital size={35} />,
-            title: "الرعاية الصحية",
+            icon: <FaShoppingCart size={35} />,
+            title: "المشتريات الصحية",
             skills: [
-              "الصيدلة السريرية",
-              "تثقيف المرضى",
-              "التغذية",
+              "إدارة الموردين",
+              "التفاوض",
+              "أوامر الشراء",
+              "إدارة المخزون",
+              "تنسيق سلسلة الإمداد",
             ],
           },
           {
             icon: <FaChartLine size={35} />,
             title: "المهارات المهنية",
-            skills: profile.skills.ar,
+            skills: [
+              "التواصل الفعال",
+              "حل المشكلات",
+              "العمل الجماعي",
+              "القيادة",
+              "إدارة الوقت",
+              "التطوير المهني المستمر",
+            ],
           },
         ];
 

@@ -8,20 +8,16 @@ export const profile = {
   location: "Dammam, Saudi Arabia",
 
   summary: {
-    en: "Clinical Pharmacist and Procurement Specialist with experience in purchasing, supplier management, inventory analysis, and healthcare operations.",
-    ar: "صيدلي سريري وأخصائي مشتريات بخبرة في إدارة المشتريات والتعامل مع الموردين وتحليل المخزون والعمليات الصحية.",
+    en: "Clinical Pharmacist with a Bachelor's degree in Clinical Pharmacy and practical experience in pharmaceutical care, medication dispensing, patient counseling, and promoting the safe and effective use of medicines. Passionate about evidence-based practice and continuous professional development. In addition to my pharmacy background, I have experience in healthcare procurement, supplier coordination, inventory analysis, and supply chain operations.",
+
+    ar: "صيدلي حاصل على درجة البكالوريوس في الصيدلة السريرية، أمتلك خبرة عملية في تقديم الرعاية الدوائية، صرف الأدوية، تثقيف المرضى، ومتابعة العلاج وفق أفضل الممارسات المهنية. أحرص على تطبيق معايير سلامة الدواء وتعزيز الاستخدام الرشيد للأدوية، مع الاهتمام بالتطوير المستمر والاطلاع على أحدث الإرشادات العلمية. إلى جانب خبرتي الصيدلانية، اكتسبت خبرة في مجال المشتريات وإدارة المنتجات الصحية، شملت التنسيق مع الموردين، تحليل المخزون، وإدارة عمليات التوريد، مما منحني فهماً متكاملاً لسلسلة الإمداد في قطاع الرعاية الصحية.",
   },
 
   experience: {
     en: [
       {
-        company: "SHATI ALWASL Trading Est.",
-        position: "Procurement Specialist",
-        period: "2024 - Present",
-      },
-      {
         company: "Al Rahab Pharmacy",
-        position: "Pharmacist",
+        position: "Clinical Pharmacist",
         period: "2021 - 2024",
       },
       {
@@ -29,17 +25,17 @@ export const profile = {
         position: "Pharmacist",
         period: "2019 - 2021",
       },
+      {
+        company: "SHATI ALWASL Trading Est.",
+        position: "Procurement Specialist",
+        period: "2024 - Present",
+      },
     ],
 
     ar: [
       {
-        company: "مؤسسة شاطئ الوصل التجارية",
-        position: "أخصائي مشتريات",
-        period: "حتى الآن - 2024",
-      },
-      {
         company: "صيدلية الرحاب",
-        position: "صيدلي",
+        position: "صيدلي سريري",
         period: "2024 - 2021",
       },
       {
@@ -47,28 +43,43 @@ export const profile = {
         position: "صيدلي",
         period: "2021 - 2019",
       },
+      {
+        company: "مؤسسة شاطئ الوصل التجارية",
+        position: "أخصائي مشتريات",
+        period: "حتى الآن - 2024",
+      },
     ],
   },
 
   skills: {
     en: [
+      "Clinical Pharmacy",
+      "Pharmaceutical Care",
+      "Patient Counseling",
+      "Medication Safety",
+      "Prescription Review",
+      "Drug Information",
+      "Nutrition",
+      "Healthcare Procurement",
       "Supplier Management",
-      "Negotiation",
       "Inventory Analysis",
       "Odoo ERP",
       "Microsoft Excel",
-      "Clinical Pharmacy",
-      "Nutrition",
     ],
 
     ar: [
+      "الصيدلة السريرية",
+      "الرعاية الدوائية",
+      "تثقيف المرضى",
+      "سلامة الدواء",
+      "مراجعة الوصفات الطبية",
+      "المعلومات الدوائية",
+      "التغذية",
+      "المشتريات الصحية",
       "إدارة الموردين",
-      "التفاوض",
       "تحليل المخزون",
       "Odoo ERP",
       "مايكروسوفت إكسل",
-      "الصيدلة السريرية",
-      "التغذية",
     ],
   },
 };

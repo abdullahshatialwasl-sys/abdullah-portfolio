@@ -10,65 +10,77 @@ export default function Education() {
       ? [
           {
             title: "Bachelor of Clinical Pharmacy",
-            place: "Bachelor Degree",
+            place: "Hodeidah University | 2019",
             description:
-              "Clinical pharmacy education including pharmacotherapy, patient care, medication management, and healthcare practice.",
+              "Bachelor's degree in Clinical Pharmacy with comprehensive academic training in pharmacotherapy, pharmaceutical care, clinical pharmacy practice, patient counseling, medication safety, and evidence-based healthcare.",
           },
           {
-            title: "Diploma in Community Nutrition",
-            place: "Professional Diploma",
+            title: "Pharmacy Practice License",
+            place: "Yemeni Medical Council | 2023",
             description:
-              "Knowledge of nutrition principles, dietary guidance, and health improvement strategies.",
+              "Licensed Pharmacist authorized to practice the pharmacy profession in accordance with professional standards and healthcare regulations.",
           },
           {
             title: "Diploma in Pharmaceutical Marketing",
-            place: "Professional Diploma",
+            place: "University of Science & Technology | 2019",
             description:
-              "Understanding pharmaceutical markets, product promotion, and healthcare business concepts.",
+              "Professional diploma covering pharmaceutical marketing, product promotion, healthcare business strategies, and market analysis.",
           },
           {
-            title: "Microsoft Office Diploma",
-            place: "Professional Training",
+            title: "Diploma in Community Nutrition",
+            place: "University of Science & Technology | 2018",
             description:
-              "Advanced skills in Excel, Word, PowerPoint, and business reporting.",
+              "Professional education in nutrition principles, healthy lifestyle promotion, and community health awareness.",
           },
           {
-            title: "English Diploma",
-            place: "Professional Training",
+            title: "Diploma in Microsoft Office Applications",
+            place: "British Institute of Science & Technology | 2019",
             description:
-              "Professional English communication and workplace skills.",
+              "Professional training in Microsoft Excel, Word, PowerPoint, data management, and business reporting.",
+          },
+          {
+            title: "Diploma in English Language",
+            place: "British Institute of Science & Technology | 2013",
+            description:
+              "Professional English language skills for effective communication in healthcare and professional environments.",
           },
         ]
       : [
           {
             title: "بكالوريوس الصيدلة السريرية",
-            place: "درجة البكالوريوس",
+            place: "جامعة الحديدة | 2019",
             description:
-              "دراسة الصيدلة السريرية بما يشمل العلاج الدوائي ورعاية المرضى وإدارة الأدوية والممارسات الصحية.",
+              "درجة البكالوريوس في الصيدلة السريرية، مع دراسة متقدمة في العلاج الدوائي، والرعاية الصيدلانية، والصيدلة السريرية، وسلامة الدواء، وتثقيف المرضى، والممارسة المبنية على الأدلة العلمية.",
           },
           {
-            title: "دبلوم التغذية المجتمعية",
-            place: "دبلوم مهني",
+            title: "ترخيص مزاولة مهنة الصيدلة",
+            place: "المجلس الطبي اليمني | 2023",
             description:
-              "دراسة مبادئ التغذية والإرشاد الغذائي وتحسين الصحة العامة.",
+              "ترخيص رسمي لمزاولة مهنة الصيدلة وفق الأنظمة والمعايير المهنية المعتمدة في القطاع الصحي.",
           },
           {
             title: "دبلوم التسويق الدوائي",
-            place: "دبلوم مهني",
+            place: "جامعة العلوم والتكنولوجيا | 2019",
             description:
-              "فهم الأسواق الدوائية وتسويق المنتجات والمفاهيم التجارية في القطاع الصحي.",
+              "دبلوم مهني في التسويق الدوائي يشمل تسويق المنتجات الصحية، واستراتيجيات التسويق، وتحليل الأسواق الدوائية.",
           },
           {
-            title: "دبلوم مايكروسوفت أوفيس",
-            place: "تدريب مهني",
+            title: "دبلوم التغذية المجتمعية",
+            place: "جامعة العلوم والتكنولوجيا | 2018",
             description:
-              "مهارات متقدمة في مايكروسوفت إكسل، ومايكروسوفت وورد، ومايكروسوفت باوربوينت، وإعداد التقارير الاحترافية.",
+              "دراسة مبادئ التغذية، وتعزيز الصحة، والتوعية الغذائية، وتحسين جودة الحياة الصحية.",
+          },
+          {
+            title: "دبلوم تطبيقات مايكروسوفت أوفيس",
+            place: "المعهد البريطاني للعلوم والتقنية | 2019",
+            description:
+              "تدريب احترافي في Microsoft Excel وWord وPowerPoint وإدارة البيانات وإعداد التقارير.",
           },
           {
             title: "دبلوم اللغة الإنجليزية",
-            place: "تدريب مهني",
+            place: "المعهد البريطاني للعلوم والتقنية | 2013",
             description:
-              "مهارات اللغة الإنجليزية للتواصل والعمل باحترافية.",
+              "تأهيل في مهارات اللغة الإنجليزية للتواصل المهني والعمل في بيئات الرعاية الصحية.",
           },
         ];
 
@@ -87,8 +99,8 @@ export default function Education() {
 
         <h2 className="text-4xl font-bold mt-2">
           {language === "en"
-            ? "Education & Training"
-            : "التعليم والتدريب"}
+            ? "Education & Qualifications"
+            : "المؤهلات العلمية"}
         </h2>
       </div>
 
