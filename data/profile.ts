@@ -17,7 +17,7 @@ export const profile = {
     en: [
       {
         company: "Al Rahab Pharmacy",
-        position: "Clinical Pharmacist",
+        position: "Pharmacist",
         period: "2021 - 2024",
       },
       {
@@ -35,18 +35,18 @@ export const profile = {
     ar: [
       {
         company: "صيدلية الرحاب",
-        position: "صيدلي سريري",
-        period: "2024 - 2021",
+        position: "صيدلي",
+        period: "2021 - 2024",
       },
       {
         company: "صيدلية الدوحة",
         position: "صيدلي",
-        period: "2021 - 2019",
+        period: "2019 - 2021",
       },
       {
         company: "مؤسسة شاطئ الوصل التجارية",
         position: "أخصائي مشتريات",
-        period: "حتى الآن - 2024",
+        period: "2024 - حتى الآن",
       },
     ],
   },

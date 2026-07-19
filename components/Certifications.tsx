@@ -12,11 +12,14 @@ export default function Certifications() {
   );
 
   const certificates = [
+    "certificate05.jpeg",
+    "certificate16.jpeg",
+    "certificate17.jpeg",
+    "certificate15.jpeg",
     "certificate01.jpeg",
     "certificate02.jpeg",
     "certificate03.jpeg",
     "certificate04.jpeg",
-    "certificate05.jpeg",
     "certificate06.jpeg",
     "certificate07.jpeg",
     "certificate08.jpeg",
@@ -26,9 +29,7 @@ export default function Certifications() {
     "certificate12.jpeg",
     "certificate13.jpeg",
     "certificate14.jpeg",
-    "certificate15.jpeg",
-    "certificate16.jpeg",
-    "certificate17.jpeg",
+    
   ];
 
   return (
