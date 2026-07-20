@@ -7,9 +7,7 @@ import { useLanguage } from "./LanguageProvider";
 export default function Certifications() {
   const { language } = useLanguage();
 
-  const [selectedCertificate, setSelectedCertificate] = useState<string | null>(
-    null
-  );
+  const [selectedFile, setSelectedFile] = useState<string | null>(null);
 
   const certificates = [
     "certificate05.jpeg",
@@ -29,7 +27,6 @@ export default function Certifications() {
     "certificate12.jpeg",
     "certificate13.jpeg",
     "certificate14.jpeg",
-    
   ];
 
   return (
@@ -66,7 +63,7 @@ export default function Certifications() {
           >
             <button
               onClick={() =>
-                setSelectedCertificate(`/certificates/${certificate}`)
+                setSelectedFile(`/certificates/${certificate}`)
               }
               className="w-full"
             >
@@ -80,25 +77,48 @@ export default function Certifications() {
             </button>
           </div>
         ))}
+
+        {/* بطاقة تقرير DataFlow */}
+        <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition">
+          <button
+            onClick={() => setSelectedFile("/documents/DataFlow-Report.pdf")}
+            className="w-full h-48 flex flex-col items-center justify-center bg-slate-800 hover:bg-slate-700 transition"
+          >
+            <div className="text-6xl">📄</div>
+            <div className="mt-3 text-white font-semibold text-center px-2">
+              {language === "en"
+                ? "DataFlow Report"
+                : "تقرير DataFlow"}
+            </div>
+          </button>
+        </div>
       </div>
 
-      {selectedCertificate && (
+      {selectedFile && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4">
-          <div className="relative max-w-5xl w-full">
+          <div className="relative max-w-6xl w-full h-[90vh] bg-white rounded-xl overflow-hidden">
             <button
-              onClick={() => setSelectedCertificate(null)}
-              className="absolute right-3 top-3 z-10 bg-white text-black rounded-full w-10 h-10 text-xl font-bold hover:bg-gray-200"
+              onClick={() => setSelectedFile(null)}
+              className="absolute right-3 top-3 z-20 bg-white text-black rounded-full w-10 h-10 text-xl font-bold hover:bg-gray-200"
             >
               ✕
             </button>
 
-            <Image
-              src={selectedCertificate}
-              alt="Certificate Preview"
-              width={1200}
-              height={900}
-              className="w-full max-h-[90vh] object-contain rounded-xl"
-            />
+            {selectedFile.endsWith(".pdf") ? (
+              <iframe
+                src={selectedFile}
+                className="w-full h-full"
+                title="DataFlow Report"
+              />
+            ) : (
+              <Image
+                src={selectedFile}
+                alt="Certificate Preview"
+                width={1200}
+                height={900}
+                className="w-full h-full object-contain"
+              />
+            )}
           </div>
         </div>
       )}
